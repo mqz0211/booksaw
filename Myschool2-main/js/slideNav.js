@@ -45,5 +45,4 @@ function w3_close() {
 }
 
 
-
 (jQuery);

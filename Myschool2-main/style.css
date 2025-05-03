@@ -16,10 +16,10 @@
 
 /* Theme Colors */
 :root {
-  --accent-color: #C5A992;
-  --secondary-color: #C5A992;
-  --dark-color: #2f2f2f;
-  --light-color: #F3F2EC;
+  --accent-color: #9b7767;
+  --secondary-color: #a47e5fb4;
+  --dark-color: #b45620;
+  --light-color: #EFDED4;
   --body-text-color: #757575;
   --light-text-color: #afafaf;
   --dark-text-color: #2f2f2f;
@@ -27,9 +27,9 @@
 
 /* Fonts */
 :root {
-  --body-font: "Raleway", sans-serif;
-  --heading-font: "Prata", Georgia, serif;
-  --secondary-font: "Playfair Display", Georgia, serif;
+  --body-font: "Raleway",sans-serif;
+  --heading-font: "sans-serif",serif;
+  --secondary-font: "serif", Georgia;
 }
 
 /* Bootstrap variables */
@@ -327,7 +327,7 @@ ol li {
 }
 
 ul li.active a {
-  color: #daa556;
+  color: #623e06;
 }
 
 ul li:last-child,
@@ -608,6 +608,22 @@ abbr {
   border: 0;
 }
 
+.btn:hover,
+.btn:focus,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="file"]:focus,
+input[type="file"]:hover,
+button:focus,
+button:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
 /*------------------------------------------------
 /* 2.3 Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -846,7 +862,7 @@ button {
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   z-index: 1;
   cursor: pointer;
   white-space: nowrap;
@@ -1361,28 +1377,28 @@ This is main CSS file that contains custom style rules used in this template
 /* - Section Padding
 --------------------------------------------------------------*/
 .padding-xsmall {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
 }
 
 .padding-small {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .padding-medium {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .padding-xlarge {
-  padding-top: 9.5em;
-  padding-bottom: 9.5em;
+  padding-top: 12em;
+  padding-bottom: 12em;
 }
 
 .padding-2xlarge {
-  padding-top: 15em;
-  padding-bottom: 15em;
+  padding-top: 20em;
+  padding-bottom: 20em;
 }
 
 /* no padding */
@@ -1481,6 +1497,8 @@ button {
 .btn-submit:hover {
   background-color: #c5a992;
   color: #fff;
+  transform: scale(1.05);          /* Slightly enlarges the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
 .btn-accent-arrow {
@@ -1712,6 +1730,10 @@ img.post-image {
 
 .top-content .right-element {
   text-align: right;
+}
+
+#quotation q {
+  text-align: center;
 }
 
 .top-content .right-element .for-buy {
@@ -1953,7 +1975,7 @@ img.post-image {
 --------------------------------------------------------------*/
 #best-selling {
   background: #EDEBE4;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 #best-selling .products-thumb {
@@ -2185,8 +2207,7 @@ span.prev-price {
 
 /*----- Latest Blog Section
 --------------------------------------------------------------*/
-#latest-blog {
-}
+/* Removed empty ruleset for #latest-blog */
 
 #latest-blog article.column {
   margin-bottom: 60px;
